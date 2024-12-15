@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+
+            align-items: center;
+            padding: 10px 20px;
+            background: rgb(238, 174, 202);
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(210, 218, 181, 1) 50%, rgba(148, 187, 233, 1) 100%);
+            border-bottom: 2px solid black;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .site-name {
+            font-size: 24px;
+            color: rgb(6, 6, 80);
+        }
+
+        .menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: rgb(2, 11, 65);
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgb(238, 174, 202);
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(210, 218, 181, 1) 50%, rgba(148, 187, 233, 1) 100%);
+            padding: 10px 32px;
+            border-top: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            width: 40px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .menu {
+            display: flex;
+            justify-items: end;
+
+
+            text-decoration: none;
+            color: rgb(2, 11, 65);
+            font-size: 16px;
+            margin-right: 0;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        #container {
+            /*In a CSS rule, the word on the left side of colon (:) is called a CSS Property. The word on the right side of colon is called a CSS Value.*/
+            background-color: skyblue;
+            width: 600px;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding: 10px;
+        }
+
+        div {
+            margin-bottom: 10px;
+            /*text-align: center;*/
+        }
+
+        /* 2. Put the label tag in its own row by changing the display, but there is problem with the radio button and textbox labels */
+        label {
+            /* <label> by default is set to display: inline, which is why label and input are next to each other. we can overwrite this and make label a block element so that it is on its own line. */
+            display: block;
+        }
+
+        /* 3. So we give the radio button and textbox labels a class inline-label so that those labels stay inline */
+        .inline-label {
+            display: inline;
+        }
+
+        .email-label {
+            color: blue;
+        }
+
+        /* Another way to select an element, using attribute selectors */
+        input[type="text"] {
+            /* We can use percentages for width. width 100% means 100% of this element's parent, which is <div id="container">*/
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            height: 40px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            height: 40px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 90px;
+        }
+        .form{
+            width: 500px;
+            margin: 24px auto;
+            padding: 20px;
+            border: 2px solid #eee;
+            border-radius: 18px;
+            background-color: rgba(233, 150, 122, 0.342);
+        }
+    </style>
+
+
+    <title>Final Project</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="black-yellow-bird-with-yellow-beak-that-says-bird_1309173-90083.avif" alt="logo" class="logo" />
+            <h1 class="site-name">Online Library</h1>
+        </div>
+        <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./login.html">Log in</a>
+        </nav>
+    </header>
+    <main>
+        <form class="form">
+        <div>
+            <label for="Fulname" class="lab" for="Ful-name">Ful-name</label>
+            <input id="Ful-name" type="text" pleaseholder="fatima mousavi" name="Ful-name" required minlength="4" />
+
+        </div>
+
+        <div>
+            <label for="email" class="ssd" for="email">your email-address</label>
+            <input id="email" type="email" placeholder="fatimamousavi@224gmail.com" name="email-address" required>
+        </div>
+
+        <div>
+            <label for="password" class="lab" for="password">your password</label>
+            <input id="password" type="text" placeholder="password" name="password" />
+        </div>
+
+
+
+        <div>
+            <label for="idea">Write something about your shopping in this online shop!</label>
+            <textarea id="idea" name="idea"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </div>
+        </form>
+    </main>
+    <footer class="footer">
+
+        <img src="black-yellow-bird-with-yellow-beak-that-says-bird_1309173-90083.avif" alt="logo"
+            class="footer-logo" />
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./login.html">Log in</a>
+        </nav>
+
+    </footer>
+    </div>
+
+    </div>
+
+    </main>
+</body>
+
+</html>
